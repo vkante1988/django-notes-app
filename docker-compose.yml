@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   nginx:
     build: ./nginx
@@ -9,7 +7,7 @@ services:
       - "80:80"
     restart: always
     depends_on:
-      - vkante1988/django_app
+      - django_app
     networks:
       - notes-app-nw
 
